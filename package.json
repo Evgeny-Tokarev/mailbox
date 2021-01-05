@@ -1,0 +1,20 @@
+{
+  "name": "mailbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "start": "parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html",
+    "format": "prettier --write .",
+    "serve": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "sass": "^1.32.0"
+  }
+}
