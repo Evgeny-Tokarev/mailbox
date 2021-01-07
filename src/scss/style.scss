@@ -1,11 +1,45 @@
-@font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans-ExtraBold.eot");
-    src: url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/OpenSans-ExtraBold.svg") format("svg"),
-      url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"),
-      url("../fonts/OpenSans-ExtraBold.woff") format("woff"),
-      url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
-  }
+// // @font-face {
+// //   font-family: 'Sen';
+// //   src: url('../fonts/Sen-Bold.eot');
+// //   src: local('../fonts/Sen Bold'), local('Sen-Bold'),
+// //       url('../fonts/Sen-Bold.eot?#iefix') format('embedded-opentype'),
+// //       url('../fonts/Sen-Bold.woff2') format('woff2'),
+// //       url('../fonts/Sen-Bold.woff') format('woff'),
+// //       url('../fonts/Sen-Bold.ttf') format('truetype');
+// //   font-weight: 600;
+// //   font-style: normal;
+// // }
+
+// @font-face {
+//   font-family: 'Sen';
+//   src: url('../fonts/Sen-ExtraBold.eot');
+//   src: local('../fonts/Sen ExtraBold'), local('Sen-ExtraBold'),
+//       url('../fonts/Sen-ExtraBold.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/Sen-ExtraBold.woff2') format('woff2'),
+//       url('../fonts/Sen-ExtraBold.woff') format('woff'),
+//       url('../fonts/Sen-ExtraBold.ttf') format('truetype');
+//   font-weight: 800;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Sen';
+//   src: url('../fonts/Sen-Regular.eot');
+//   src: local('../fonts/Sen Regular'), local('Sen-Regular'),
+//       url('../fonts/Sen-Regular.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/Sen-Regular.woff2') format('woff2'),
+//       url('../fonts/Sen-Regular.woff') format('woff'),
+//       url('../fonts/Sen-Regular.ttf') format('truetype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// ______________________________________
+
+.container {
+  width: 100%;
+  height: 200px;
+  background-color: #cecece;
+  display: grid;
+  grid-template-columns: 40px auto auto 40px;
+}
