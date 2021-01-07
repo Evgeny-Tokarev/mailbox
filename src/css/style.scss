@@ -1,43 +1,64 @@
 @font-face {
   font-family: 'Sen';
-  src: url('Sen-Bold.eot');
-  src: local('Sen Bold'), local('Sen-Bold'),
-      url('Sen-Bold.eot?#iefix') format('embedded-opentype'),
-      url('Sen-Bold.woff2') format('woff2'),
-      url('Sen-Bold.woff') format('woff'),
-      url('Sen-Bold.ttf') format('truetype');
+  src: url('../fonts/Sen-Bold.eot');
+  src: local('../fonts/Sen Bold'), local('Sen-Bold'),
+      url('../fonts/Sen-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Sen-Bold.woff2') format('woff2'),
+      url('../fonts/Sen-Bold.woff') format('woff'),
+      url('../fonts/Sen-Bold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sen';
-  src: url('Sen-ExtraBold.eot');
-  src: local('Sen ExtraBold'), local('Sen-ExtraBold'),
-      url('Sen-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('Sen-ExtraBold.woff2') format('woff2'),
-      url('Sen-ExtraBold.woff') format('woff'),
-      url('Sen-ExtraBold.ttf') format('truetype');
+  src: url('../fonts/Sen-ExtraBold.eot');
+  src: local('../fonts/Sen ExtraBold'), local('Sen-ExtraBold'),
+      url('../fonts/Sen-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Sen-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Sen-ExtraBold.woff') format('woff'),
+      url('../fonts/Sen-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sen';
-  src: url('Sen-Regular.eot');
-  src: local('Sen Regular'), local('Sen-Regular'),
-      url('Sen-Regular.eot?#iefix') format('embedded-opentype'),
-      url('Sen-Regular.woff2') format('woff2'),
-      url('Sen-Regular.woff') format('woff'),
-      url('Sen-Regular.ttf') format('truetype');
+  src: url('../fonts/Sen-Regular.eot');
+  src: local('../fonts/Sen Regular'), local('Sen-Regular'),
+      url('../fonts/Sen-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Sen-Regular.woff2') format('woff2'),
+      url('../fonts/Sen-Regular.woff') format('woff'),
+      url('../fonts/Sen-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 // ______________________________________
 
+html * {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
 .container {
   width: 100%;
+  height: 100vh;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 40px auto auto 40px;
+  justify-content: space-around;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  gap: 10px 10px;
+  background-color: rgb(133, 175, 133);
+  & * {
+    background-color: #e7b0b0;
+  }
+  & > * {
+    min-width: 0;
+  }
+  .left-bar {
+    background-color: #5E77FB;
+  }
 }
