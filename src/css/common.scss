@@ -1,0 +1,50 @@
+$light-grey: #f8fafc;
+$grey: #dbe1fa;
+$border-grey: #707070;
+$envelope-blue: #3955e9;
+$blue-text: #4762f0;
+$dark-blue: #4863f0;
+$black-text: #333333;
+
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Bold.eot");
+  src: local("../fonts/Sen Bold"), local("Sen-Bold"),
+    url("../fonts/Sen-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Sen-Bold.woff2") format("woff2"),
+    url("../fonts/Sen-Bold.woff") format("woff"),
+    url("../fonts/Sen-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-ExtraBold.eot");
+  src: local("../fonts/Sen ExtraBold"), local("Sen-ExtraBold"),
+    url("../fonts/Sen-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Sen-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Sen-ExtraBold.woff") format("woff"),
+    url("../fonts/Sen-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Regular.eot");
+  src: local("../fonts/Sen Regular"), local("Sen-Regular"),
+    url("../fonts/Sen-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Sen-Regular.woff2") format("woff2"),
+    url("../fonts/Sen-Regular.woff") format("woff"),
+    url("../fonts/Sen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}

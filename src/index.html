@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mailbox</title>
     <link rel="stylesheet" href="css/style.scss" />
     <link rel="shortcut icon" href="img/mail-badge.svg" type="image/x-icon" />
-</head>
-<body>
-    <div class="container">
-        <div class="left-bar"></div>
-        <div class="main-content"></div>
-        <div class="additional-content"></div>
-        <div class="right-bar"></div>
+  </head>
+  <body>
+    <div class="container grid">
+      <div class="left-bar grid">
+        <a href="#" class="left-bar__burger grid"
+          ><img src="img/burger.png" alt="burger"
+        /></a>
+        <div class="left-bar__centrals grid">
+          <a href="#" class="centrals__envelope grid"
+            ><img src="img/envelope.png" alt="envelope"
+          /></a>
+          <div class="centrals__something grid"></div>
+          <div class="centrals__calendar grid"></div>
+          <div class="centrals__clock grid"></div>
+        </div>
+        <a href="#" class="left-bar__photo grid"
+          ><img src="img/left-bar_photo.png" alt="photo"
+        /></a>
+      </div>
+      <div class="main-content"></div>
+      <div class="additional-content"></div>
+      <div class="right-bar"></div>
     </div>
-</body>
+  </body>
 </html>
