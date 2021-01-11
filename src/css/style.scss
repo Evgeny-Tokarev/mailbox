@@ -22,19 +22,55 @@ body {
 
   .left-bar {
     background-image: linear-gradient(30deg, #5e77fb, #4964ef);
-    border: 1px solid $border-grey;
     border-radius: 12px;
     overflow: hidden;
     justify-content: center;
+    align-content: space-between;
+    grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+
+    & > * {
+      justify-content: center;
+
+      grid-template-columns: min-content;
+    }
+    & > * img {
+      padding: 20px;
+      border-radius: 14px;
+      transition: all 0.5s ease;
+    }
+    & > * img:hover {
+      background-color: $envelope-blue;
+    }
+
     &__burger {
       align-content: start;
-      margin: 20px auto;
+      // margin: 20px auto;
+      padding: 20px;
+      border-radius: 14px;
     }
-    &__centrals {
-      align-content: space-between;
+
+    &__envelope {
+      position: relative;
     }
+    &__envelope::before {
+      content: "4";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      position: absolute;
+      right: 25px;
+      top: 5px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
     &__photo {
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
       align-content: end;
     }
   }
