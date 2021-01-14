@@ -6,6 +6,7 @@
     <title>mailbox</title>
     <link rel="stylesheet" href="css/style.scss" />
     <link rel="shortcut icon" href="img/mail-badge.svg" type="image/x-icon" />
+    <link href="css/all.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container grid">
@@ -31,7 +32,64 @@
           ><img src="img/left-bar_photo.png" alt="photo"
         /></a>
       </div>
-      <div class="main-content"></div>
+      <div class="main-content">
+        <form action="#" class="search">
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            id="search-form-text"
+          />
+          <input type="text" name="sort" list="sorttype" placeholder="Newest" />
+          <datalist id="sorttype">
+            <option>Newest</option>
+            <option>Popular</option>
+            <option>Size</option>
+          </datalist>
+        </form>
+        <div class="main-content__header">
+          <div class="header__logo"></div>
+          <div class="header__new"></div>
+          <div class="header__customization"></div>
+          <div class="header__parameters"></div>
+        </div>
+        <div class="main-content__letters">
+          <div class="letters__item">
+            <div class="letter__header">
+              <input type="radio" />
+              <img src="img/we.svg" alt="we" class="letter__logo" />
+              <div class="letter__data">
+                <div class="date"></div>
+                <div class="time"></div>
+              </div>
+            </div>
+            <div class="letter__description">
+              <div class="description__flag"></div>
+              <div class="description__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                amet provident dolor nulla ea illo aliquid molestiae. Ut ea,
+                nesciunt numquam aperiam molestiae ducimus sed
+              </div>
+            </div>
+          </div>
+          <div class="letters__item">
+            <div class="letter__header"></div>
+            <div class="letter__description"></div>
+          </div>
+          <div class="letters__item">
+            <div class="letter__header"></div>
+            <div class="letter__description"></div>
+          </div>
+          <div class="letters__item">
+            <div class="letter__header"></div>
+            <div class="letter__description"></div>
+          </div>
+          <div class="letters__item">
+            <div class="letter__header"></div>
+            <div class="letter__description"></div>
+          </div>
+        </div>
+      </div>
       <div class="additional-content"></div>
       <div class="right-bar"></div>
     </div>

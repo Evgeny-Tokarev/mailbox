@@ -75,7 +75,28 @@ body {
     }
   }
   .main-content {
+    margin: 0 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+    #search-form-text {
+      width: 100%;
+      height: 68px;
+      border: 1px solid rgba(72, 98, 240, 0.12);
+      border-radius: 12px;
+      padding-left: 25px;
+      position: relative;
+      background-image: url(../img/search-solid.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      &::-webkit-input-placeholder {
+        font-size: 18px;
+        color: #000;
+        opacity: 0.28;
+      }
+    }
   }
+
   .additional-content {
   }
   .right-bar {
