@@ -16,7 +16,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  grid-template-columns: minmax(min-content, 103px) 3fr 3fr 3fr;
+  grid-template-columns: minmax(min-content, 103px) 1fr 1fr 1fr;
   background-color: $light-grey;
   align-items: space-between;
 
@@ -44,7 +44,6 @@ body {
 
     &__burger {
       align-content: start;
-      // margin: 20px auto;
       padding: 20px;
       border-radius: 14px;
     }
@@ -70,7 +69,6 @@ body {
     }
 
     &__photo {
-      // margin-bottom: 20px;
       align-content: end;
     }
   }
@@ -78,21 +76,42 @@ body {
     margin: 0 10%;
     display: grid;
     grid-template-rows: 1fr 1fr 8fr;
-    #search-form-text {
-      width: 100%;
-      height: 68px;
+    .search {
+      display: grid;
+      color: rgba(0, 0, 0, 0.28);
+      grid-template-columns: repeat(4, 1fr);
       border: 1px solid rgba(72, 98, 240, 0.12);
       border-radius: 12px;
+      overflow: hidden;
+      svg {
+        align-self: center;
+      }
+    }
+    .queryinput {
       padding-left: 25px;
-      position: relative;
-      background-image: url(../img/search-solid.svg);
-      background-repeat: no-repeat;
-      background-position: 0 0;
+      border-color: transparent;
 
-      &::-webkit-input-placeholder {
+      &::placeholder {
+        font-weight: bold;
         font-size: 18px;
-        color: #000;
-        opacity: 0.28;
+        color: rgba(0, 0, 0, 0.28);
+      }
+    }
+    .sortinput {
+      border-color: transparent;
+      padding-right: 25px;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.28);
+      }
+    }
+    .choiceinput {
+      border-color: transparent;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.28);
       }
     }
   }
