@@ -6,4 +6,4 @@
  
  npm install
  
- npm runstart
+ npm run start
